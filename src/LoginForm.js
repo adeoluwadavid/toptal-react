@@ -24,10 +24,11 @@ export default function LoginForm() {
   const handleSubmit =async()=>{
     try {
       setSubmit(true)
+      setError('')
       let response = await performLogin({email, password})
       if(!response){
         setSubmit(false)
-        alert('Successful')
+        alert()
       }
 
     }catch(err){
