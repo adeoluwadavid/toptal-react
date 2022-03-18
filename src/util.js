@@ -1,6 +1,5 @@
 export function performLogin({ email, password }) {
-  console.log(email)
-  console.log(password)
+  
   const delay = (0.5 + Math.random() * 2) * 1000;
   return new Promise((resolve, reject) => {
     setTimeout(function () {
